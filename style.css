@@ -27,7 +27,7 @@ body {
 }
 
 .header-links {
-  width: 50%;
+  width: 60%;
   display: flex;
   justify-content: space-between;
 }
@@ -127,17 +127,31 @@ header nav a:first-child {
   border-radius: 25px;
 }
 
-.card-text p {
-  color: aliceblue;
-  transition-property: color;
+.card {
   transition-duration: 2s;
-  transition-timing-function: ease-in;
 }
 
-.card-text p:hover {
-  color: #352912;
+.card:hover {
+  transform: scale(1.1);
 }
 
+.default:hover {
+  border: 1px dashed rgb(1, 97, 1); 
+  color: rgb(1, 97, 1)
+}
+
+.welcome-btn{
+  color: #fff;
+  background-color: #458ff6;
+  border:none;
+  padding: 15px 35px;
+  border-radius: 25px;
+  font-size: 1rem;
+} 
+
+.welcome-btn:hover {
+  box-shadow: aqua 0px 0px 10px 0px ;
+}
 
 .card p{
   line-height: 1.5;
